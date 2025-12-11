@@ -5,7 +5,7 @@
 
 typedef enum
 {
-	JSON_OBJECT,
+	JSON_OBJECT = 0u,
 	JSON_STRING,
 	JSON_NUMBER,
 	JSON_BOOL,
@@ -14,11 +14,16 @@ typedef enum
 
 typedef struct	s_JSON
 {
-	char			*key;
 	JSON_type		type;
 	void			*value;
-	struct s_JSON	*next;
 }	t_JSON;
+
+typedef struct	s_JSON_pair
+{
+	char				*key;
+	t_JSON				*value;
+	struct s_JSON_pair	*next;
+}	t_JSON_pair;
 
 /**
  * @brief
@@ -62,4 +67,4 @@ char	*JSON_write_string(t_JSON *root);
  */
 void	JSON_destroy(t_JSON *root);
 
-#endif
+#endif /* JSON_JSON_H */

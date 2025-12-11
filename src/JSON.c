@@ -1,4 +1,5 @@
-int test(void)
-{
-	return (0);
-}
+#include "fs.h" // Home header
+#include "log.h"
+#include "JSON.h"
+#include <stdio.h> // Standard lib
+

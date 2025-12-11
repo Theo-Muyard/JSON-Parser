@@ -3,5 +3,6 @@
 		"User01": "Pascal",
 		"User02": "Bob"
 	},
-	"Bob": "Je suis bob."
+	"Bob": "Je suis bob.",
+	"num": 3.123
 }

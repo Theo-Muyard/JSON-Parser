@@ -1,4 +1,4 @@
-#include "fs.h" // Home Header
+#include "fs.h" // Home header
 #include "log.h"
 #include <stdio.h> // Standard libs
 #include <stdlib.h>
